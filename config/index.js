@@ -6,7 +6,7 @@ module.exports = {
   siteDescription: "Coming Soon.",
   siteUrl: "https://zaynabbas.com/",
   siteLanguage: "en_US",
-  siteIcon: "content/favicon.png", // Relative to gatsby-config file
+  siteIcon: "content/cat.jpg", // Relative to gatsby-config file
   seoTitleSuffix: "Portfolio", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
@@ -14,25 +14,25 @@ module.exports = {
   // -- THEME SETTINGS -----
   colors: {
     lightTheme: {
-      primary: "#000000",
-      secondary: "#FFF4D9",
-      tertiary: "#F2F2F2",
-      text: "#000000",
-      subtext: "#555555",
-      background: "#FFFFFF",
-      card: "#FFFFFF",
-      scrollBar: "rgba(0, 0, 0, 0.5)",
+      primary: "#FAFAFA",
+      secondary: "#143462",
+      tertiary: "#143462",
+      text: "rgba(255, 255, 255, 0.87)",
+      subtext: "#AAAAAA",
+      background: "#0D203D",
+      card: "#143462",
+      scrollBar: "rgba(255, 255, 255, 0.5)",
       boxShadow: "rgba(0, 0, 0, 0.16)",
       boxShadowHover: "rgba(0, 0, 0, 0.32)",
     },
     darkTheme: {
       primary: "#FAFAFA",
-      secondary: "#2A2926",
-      tertiary: "#252525",
+      secondary: "#143462",
+      tertiary: "#143462",
       text: "rgba(255, 255, 255, 0.87)",
       subtext: "#AAAAAA",
-      background: "#121212",
-      card: "#1C1C1C",
+      background: "#0D203D",
+      card: "#143462",
       scrollBar: "rgba(255, 255, 255, 0.5)",
       boxShadow: "rgba(0, 0, 0, 0.16)",
       boxShadowHover: "rgba(0, 0, 0, 0.32)",
@@ -89,8 +89,8 @@ module.exports = {
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
+      fileName: "ZaynAbbasResume2022.pdf", // the file has to be placed inside the static folder at the root level
+      url: "file:///C:/Users/zayna/Desktop/Personal/ZaynAbbasResume2022.pdf", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [

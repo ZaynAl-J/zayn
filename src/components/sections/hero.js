@@ -116,10 +116,10 @@ const Hero = ({ content }) => {
                 animate={eControls}
                 style={{ originX: 0.7, originY: 0.7 }}
               >
-                <Img
+                {/* <Img
                   className="emoji"
                   fluid={frontmatter.icon.childImageSharp.fluid}
-                />
+                /> */}
               </motion.div>
             </div>
             {frontmatter.title}

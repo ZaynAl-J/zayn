@@ -13,6 +13,7 @@ import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
 import { seoTitleSuffix } from "../../config"
 
+
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.index.edges[0].node
   const { seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
@@ -37,10 +38,12 @@ const IndexPage = ({ data }) => {
         />
         <Hero content={data.hero.edges} />
         {/* Articles is populated via Medium RSS Feed fetch */}
-        <Articles />
+        {/* <Articles /> */}
         <About content={data.about.edges} />
+    
         <Interests content={data.interests.edges} />
         <Projects content={data.projects.edges} />
+        {/* <Projects content={data.projects.edges} /> */}
         <Contact content={data.contact.edges} />
       </Layout>
     </GlobalStateProvider>
@@ -71,15 +74,7 @@ export const pageQuery = graphql`
         node {
           body
           frontmatter {
-            greetings
             title
-            icon {
-              childImageSharp {
-                fluid(maxWidth: 60, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }
@@ -167,13 +162,6 @@ export const pageQuery = graphql`
             title
             name
             email
-            profileImage {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }
