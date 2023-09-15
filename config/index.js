@@ -89,7 +89,7 @@ module.exports = {
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "ZaynAbbasResume2022.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "ZaynAbbas23.pdf", // the file has to be placed inside the static folder at the root level
       url: "file:///C:/Users/zayna/Desktop/Personal/ZaynAbbasResume2022.pdf", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
