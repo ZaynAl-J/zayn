@@ -78,7 +78,11 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Research",
+        url: "/#research"
+      },
+      {
+        name: "Projects",
         url: "/#projects",
       },
       {
